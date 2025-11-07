@@ -18,11 +18,6 @@ const contactEmails = [
     description: "For general questions and information",
   },
   {
-    label: "Leadership",
-    email: "",
-    description: "Direct contact with leadership",
-  },
-  {
     label: "Data & Research",
     email: "datera@pisonets.com",
     description: "Datera services and research inquiries",
