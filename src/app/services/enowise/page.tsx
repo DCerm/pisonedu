@@ -82,13 +82,13 @@ const initiatives = [
 
 const topSectionItems = [
   {
-    href: "https://pisonedu.the-swep.org/blog/",
+    href: "https://knowledgebase.pisonets.com/blog/",
     title: "Breaking News",
     icon: Calendar,
     description: "Latest updates and announcements",
   },
   {
-    href: "https://pisonedu.the-swep.org/articles/",
+    href: "https://knowledgebase.pisonets.com/articles/",
     title: "Archives",
     icon: Archive,
     description: "Historical publications and records",
@@ -97,31 +97,31 @@ const topSectionItems = [
 
 const middleSectionItems = [
   {
-    href: "https://pisonedu.the-swep.org/articles/",
+    href: "https://knowledgebase.pisonets.com/articles/",
     title: "All Journals",
     icon: BookOpen,
     description: "Browse our complete journal collection",
   },
   {
-    href: "https://pisonedu.the-swep.org/contact/",
+    href: "https://knowledgebase.pisonets.com/contact/",
     title: "Submit Manuscript",
     icon: Upload,
     description: "Submit your research for publication",
   },
   {
-    href: "https://pisonedu.the-swep.org/contact/",
+    href: "https://knowledgebase.pisonets.com/contact/",
     title: "Transfer Journal",
     icon: ArrowRight,
     description: "Transfer your journal to Enowise",
   },
   {
-    href: "https://pisonedu.the-swep.org/contact/",
+    href: "https://knowledgebase.pisonets.com/contact/",
     title: "Propose a Journal",
     icon: Lightbulb,
     description: "Propose a new journal for consideration",
   },
   {
-    href: "https://pisonedu.the-swep.org/articles/",
+    href: "https://knowledgebase.pisonets.com/articles/",
     title: "Recent Articles",
     icon: FileText,
     description: "Latest published research articles",
@@ -705,7 +705,7 @@ export default function EnowisePage() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <motion.a
-                href="https://pisonedu.the-swep.org/contact/"
+                href="https://knowledgebase.pisonets.com/contact/"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-green-700 font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}

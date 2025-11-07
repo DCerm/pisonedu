@@ -70,7 +70,7 @@ const quickLinks = [
   { name: "About Us", href: "#about" },
   { name: "Services", href: "#services" },
   { name: "Products", href: "#products" },
-  { name: "Contact", href: "https://pisonedu.the-swep.org/contact" },
+  { name: "Contact", href: "https://knowledgebase.pisonets.com/contact" },
 ];
 
 export default function Footer() {

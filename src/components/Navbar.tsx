@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 import { motion } from "motion/react";
 import {
@@ -117,7 +118,7 @@ export default function Navbar() {
               Products
             </a>
             <a
-              href="https://pisonedu.the-swep.org/contact"
+              href="https://knowledgebase.pisonets.com/contact"
               className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
             >
               Contact
@@ -130,7 +131,7 @@ export default function Navbar() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              href="https://pisonedu.the-swep.org/profile/login"
+              href="https://knowledgebase.pisonets.com/profile/login"
               className="hidden md:inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-green-600 to-green-700 text-white font-medium rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Get Started
@@ -164,13 +165,13 @@ export default function Navbar() {
             className="md:hidden mt-4 pb-4 border-t border-border/40"
           >
             <div className="flex flex-col space-y-4 pt-4">
-              <a
-                href="#"
+              <Link
+                href="/"
                 className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
-              </a>
+              </Link>
               <a
                 href="#about"
                 className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
@@ -217,7 +218,7 @@ export default function Navbar() {
                 Products
               </a>
               <a
-                href="https://pisonedu.the-swep.org/contact"
+                href="https://knowledgebase.pisonets.com/contact"
                 className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -225,7 +226,7 @@ export default function Navbar() {
               </a>
 
               <a
-                href="https://pisonedu.the-swep.org/profile/login"
+                href="https://knowledgebase.pisonets.com/profile/login"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white font-medium rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-300 shadow-lg mt-4"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
