@@ -1,6 +1,6 @@
-import { get } from "http";
+//import { get } from "http";
 
-interface Post {
+/*interface Post {
   id: number;
   link: string;
   title: {
@@ -10,7 +10,7 @@ interface Post {
     rendered: string;
   };
 
-}
+}*/
 
 export async function getStaticProps() {
   const categoryId = 2; // News category ID

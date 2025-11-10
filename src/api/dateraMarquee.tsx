@@ -1,4 +1,4 @@
-interface Post {
+/*interface Post {
   id: number;
   link: string;
   title: {
@@ -7,7 +7,7 @@ interface Post {
   excerpt: {
     rendered: string;
   };
-}
+}*/
 
 export async function getStaticProps() {
   const categoryId = 5; // News category ID
