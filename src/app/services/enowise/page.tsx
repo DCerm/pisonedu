@@ -103,19 +103,19 @@ const middleSectionItems = [
     description: "Browse our complete journal collection",
   },
   {
-    href: "https://knowledgebase.pisonets.com/contact/",
+    href: "https://knowledgebase.pisonets.com/submit-manuscript/",
     title: "Submit Manuscript",
     icon: Upload,
     description: "Submit your research for publication",
   },
   {
-    href: "https://knowledgebase.pisonets.com/contact/",
+    href: "https://knowledgebase.pisonets.com/transfer-journal/",
     title: "Transfer Journal",
     icon: ArrowRight,
     description: "Transfer your journal to Enowise",
   },
   {
-    href: "https://knowledgebase.pisonets.com/contact/",
+    href: "https://knowledgebase.pisonets.com/propose-journal/",
     title: "Propose a Journal",
     icon: Lightbulb,
     description: "Propose a new journal for consideration",
@@ -217,6 +217,16 @@ export default function EnowisePage() {
                   knowledge that will bring real impacts that the world desires.
                 </p>
               </motion.div>
+
+              <motion.a
+                href="https://knowledgebase.pisonets.com/submit-manuscript/"
+                className="mt-4 lg:mt-8 inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-700 text-white font-semibold rounded-xl hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Get Started Today
+                <ArrowRight className="w-5 h-5" />
+              </motion.a>
             </div>
           </div>
         </section>
@@ -705,7 +715,7 @@ export default function EnowisePage() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <motion.a
-                href="https://knowledgebase.pisonets.com/contact/"
+                href="https://knowledgebase.pisonets.com/submit-manuscript/"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-green-700 font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}

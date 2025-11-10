@@ -37,25 +37,25 @@ const contactEmails = [
 const socialLinks = [
   {
     name: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/company/pison-ets-limited/",
     icon: Linkedin,
     color: "hover:text-blue-600",
   },
   {
     name: "Twitter",
-    href: "#",
+    href: "https://twitter.com/pison_ng",
     icon: Twitter,
     color: "hover:text-blue-400",
   },
   {
     name: "Facebook",
-    href: "#",
+    href: "https://web.facebook.com/profile.php?id=61550205256743",
     icon: Facebook,
     color: "hover:text-blue-700",
   },
   {
     name: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/pison_ng",
     icon: Instagram,
     color: "hover:text-pink-600",
   },

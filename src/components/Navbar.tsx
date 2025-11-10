@@ -64,12 +64,12 @@ export default function Navbar() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="hidden md:flex items-center space-x-8"
           >
-            <a
-              href="#"
+            <Link
+              href="/"
               className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
             >
               Home
-            </a>
+            </Link>
             <a
               href="#about"
               className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"

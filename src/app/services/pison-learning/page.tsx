@@ -124,6 +124,16 @@ export default function PisonLearningPage() {
                 also consultants to global institutions, connecting learners
                 with opportunities worldwide.
               </motion.p>
+
+              <motion.a
+                href="https://knowledgebase.pisonets.com/pison-learning-request/"
+                className="mt-4 lg:mt-8 inline-flex items-center justify-center gap-2 px-8 py-4 bg-green-700 text-white font-semibold rounded-xl hover:bg-green-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Get Started Today
+                <ArrowRight className="w-5 h-5" />
+              </motion.a>
             </div>
           </div>
         </section>
@@ -496,7 +506,7 @@ export default function PisonLearningPage() {
               className="flex flex-col sm:flex-row gap-4 justify-center"
             >
               <motion.a
-                href="https://pisonedu.the-swep.org/contact/"
+                href="https://knowledgebase.pisonets.com/pison-learning-request/"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-yellow-700 font-semibold rounded-xl hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
