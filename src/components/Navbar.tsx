@@ -131,7 +131,7 @@ export default function Navbar() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              href="https://knowledgebase.pisonets.com/profile/login"
+              href="https://knowledgebase.pisonets.com/contact"
               className="hidden md:inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-green-600 to-green-700 text-white font-medium rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Get Started
@@ -226,11 +226,11 @@ export default function Navbar() {
               </a>
 
               <a
-                href="https://knowledgebase.pisonets.com/profile/login"
+                href="https://knowledgebase.pisonets.com/contact"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-green-600 to-green-700 text-white font-medium rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-300 shadow-lg mt-4"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Get Started
+                Contact Us
               </a>
             </div>
           </motion.div>
