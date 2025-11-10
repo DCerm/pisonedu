@@ -10,7 +10,7 @@
     rendered: string;
   };
 
-}*/
+}
 
 export async function getStaticProps() {
   const categoryId = 2; // News category ID
@@ -38,4 +38,4 @@ export default async function News() {
         )}
         </main>
     );
-}
+}*/
