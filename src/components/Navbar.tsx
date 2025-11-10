@@ -134,7 +134,7 @@ export default function Navbar() {
               href="https://knowledgebase.pisonets.com/contact"
               className="hidden md:inline-flex items-center gap-2 px-6 py-2.5 bg-gradient-to-r from-green-600 to-green-700 text-white font-medium rounded-full hover:from-green-700 hover:to-green-800 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              Get Started
+              Contact Us
             </motion.a>
 
             {/* Mobile Menu Button */}

@@ -224,7 +224,7 @@ export default function EnowisePage() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Get Started Today
+                Submit Manuscript
                 <ArrowRight className="w-5 h-5" />
               </motion.a>
             </div>
