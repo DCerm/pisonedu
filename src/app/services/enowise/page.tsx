@@ -96,12 +96,7 @@ const topSectionItems = [
 ];
 
 const middleSectionItems = [
-  {
-    href: "https://knowledgebase.pisonets.com/articles/",
-    title: "All Journals",
-    icon: BookOpen,
-    description: "Browse our complete journal collection",
-  },
+  
   {
     href: "https://knowledgebase.pisonets.com/submit-manuscript/",
     title: "Submit Manuscript",
@@ -159,6 +154,7 @@ const bottomSectionItems = [
 
 export default function EnowisePage() {
   // const [activeTab, setActiveTab] = useState("overview");
+  const [journalToggle, setJournalToggle ] = useState(false);
   const [expandedSection, setExpandedSection] = useState<string | null>(null);
 
   return (
@@ -284,7 +280,47 @@ export default function EnowisePage() {
               </motion.p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className={`p-4 lg:p-6 bg-gradient-to-r from-green-100 to-yellow-50 right-2.5 lg:right-12 rounded-xl max-w-4xl absolute  ${journalToggle ? "" : "hidden"}`}>
+                <div className="flex justify-end" onClick={() => setJournalToggle(false)}>
+                    <button className="border border-gray py-1 px-2 mb-2 lg:mb-6 cursor-pointer">Close</button>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+                {journals.map((journal, i) => (
+                    <motion.a
+                    href={"https://knowledgebase.pisonets.com/submit-manuscript/"}
+                    key={journal}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: i * 0.1, duration: 0.6 }}
+                    className="group p-4 rounded-xl bg-gradient-to-br from-green-50/50 to-yellow-50/30 border border-border/50 hover:shadow-lg transition-all duration-300"
+                    >
+                    <div className="flex items-start gap-1">
+                        <div>
+                        <h3 className="font-semibold text-foreground mb-2 group-hover:text-green-600 transition-colors">
+                            {journal}
+                        </h3>
+                        </div>
+                    </div>
+                    </motion.a>
+                ))}
+                </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                onClick={() => setJournalToggle(!journalToggle)}
+            >
+                <div className="group bg-gradient-to-br from-yellow-50/50 to-green-50/30 rounded-xl p-6 border border-border/50 hover:shadow-lg transition-all duration-300 cursor-pointer">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="w-14 h-14 rounded-xl bg-gradient-to-r from-yellow-500 to-green-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <BookOpen className="w-7 h-7 text-white" />
+                      </div>
+                      <h3 className="text-xl font-semibold text-foreground group-hover:text-green-600 transition-colors">
+                        All Journals
+                      </h3>
+                    </div>
+                    <p className="text-muted-foreground">Browse our complete journal collection</p>
+                </div>
+
               {middleSectionItems.map((item, i) => {
                 const IconComponent = item.icon;
                 return (

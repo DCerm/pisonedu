@@ -131,7 +131,7 @@ export default function PisonLearningPage() {
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
-                Get Started Today
+                Start Learning Today
                 <ArrowRight className="w-5 h-5" />
               </motion.a>
             </div>

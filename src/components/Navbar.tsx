@@ -117,12 +117,7 @@ export default function Navbar() {
             >
               Products
             </a>
-            <a
-              href="https://knowledgebase.pisonets.com/contact"
-              className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
-            >
-              Contact
-            </a>
+            
           </motion.div>
 
           {/* CTA Button & Mobile Menu */}
@@ -216,13 +211,6 @@ export default function Navbar() {
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Products
-              </a>
-              <a
-                href="https://knowledgebase.pisonets.com/contact"
-                className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
-                onClick={() => setIsMobileMenuOpen(false)}
-              >
-                Contact
               </a>
 
               <a
