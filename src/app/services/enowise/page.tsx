@@ -280,7 +280,7 @@ export default function EnowisePage() {
               </motion.p>
             </div>
 
-            <div className={`p-4 lg:p-6 bg-gradient-to-r from-green-100 to-yellow-50 right-2.5 lg:right-12 rounded-xl max-w-4xl absolute  ${journalToggle ? "" : "hidden"}`}>
+            <div className={`p-4 lg:p-6 bg-gradient-to-r from-green-100 to-yellow-50 right-2.5 lg:left-40 rounded-xl max-w-4xl absolute mt-40 ${journalToggle ? "" : "hidden"}`}>
                 <div className="flex justify-end" onClick={() => setJournalToggle(false)}>
                     <button className="border border-gray py-1 px-2 mb-2 lg:mb-6 cursor-pointer">Close</button>
                 </div>

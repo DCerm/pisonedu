@@ -40,7 +40,7 @@ const services = [
     subtitle: "Academic & professional publishing",
     description:
       "High-quality publishing of journals, books, conference proceedings, and research outputs for global academic communities.",
-    href: "/services/enowise-publishing",
+    href: "/services/enowise",
     icon: BookOpen,
     color: "text-green-700",
     bgColor: "bg-green-100",
