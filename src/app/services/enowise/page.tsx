@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, Suspense } from "react";
 import { motion } from "motion/react";
 import {
   BookOpen,
@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import { Enowise } from "@/components/ui/marquee";
 
 // const publishingServices = [
 //   {
@@ -152,6 +153,7 @@ const bottomSectionItems = [
   },
 ];
 
+
 export default function EnowisePage() {
   // const [activeTab, setActiveTab] = useState("overview");
   const [journalToggle, setJournalToggle ] = useState(false);
@@ -228,7 +230,7 @@ export default function EnowisePage() {
         </section>
 
         {/* TOP Section - Breaking News & Archives */}
-        <section className="py-12 bg-gradient-to-r from-green-600 to-green-700 text-white">
+        <section className="pt-12 pb-2.5 bg-gradient-to-r from-green-600 to-green-700 text-white">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {topSectionItems.map((item, i) => {
@@ -254,7 +256,11 @@ export default function EnowisePage() {
               })}
             </div>
           </div>
+            <Suspense fallback={<div className="mt-6 py-1.5 bg-yellow-600 text-white">Loading News...</div>}>
+                <div className="mt-6 pt-1.5 bg-yellow-600 text-white"><Enowise /></div>
+            </Suspense>
         </section>
+        
 
         {/* MIDDLE Section - Journal Services */}
         <section className="py-20 bg-white">

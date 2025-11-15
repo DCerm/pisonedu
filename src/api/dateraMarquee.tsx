@@ -9,13 +9,21 @@
   };
 }*/
 
-export async function getStaticProps() {
-  const categoryId = 5; // News category ID
-  const res = await fetch(`https://yourwordpresssite.com/wp-json/wp/v2/posts?categories=${categoryId}&_embed`);
-  const posts = await res.json();
+export async function getDatera() {
+    try {
+    const categoryId = 2; // News category ID
+    const res = await fetch(`https://yourwordpresssite.com/wp-json/wp/v2/posts?categories=${categoryId}&_embed`);
+    const posts = await res.json();
 
-  return {
-    props: { posts },
-    revalidate: 60,
-  };
+    return {
+        props: { posts },
+        revalidate: 60,
+    };
+    } catch (error) {
+        console.error('Error fetching posts:', error);
+        return {
+        props: { posts: [] },
+        revalidate: 60,
+        };
+    }
 }
