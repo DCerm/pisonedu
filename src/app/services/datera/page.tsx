@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { Suspense } from "react";
 import { motion } from "motion/react";
 import {
   BarChart3,
@@ -12,9 +12,12 @@ import {
   ArrowRight,
   CheckCircle,
   Sparkles,
+  GraduationCap,
 } from "lucide-react";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import { Datera } from "@/components/ui/marquee";
+
 
 const services = [
   {
@@ -40,6 +43,12 @@ const services = [
     description:
       "Deep understanding of target audiences through behavioral and demographic analysis.",
     icon: Target,
+  },
+  {
+    title: "Academic Research",
+    description:
+      "Design and execution of research projects for academic institutions and scholars.",
+    icon: GraduationCap,
   },
 ];
 
@@ -117,11 +126,14 @@ export default function DateraPage() {
             </div>
           </div>
         </section>
+        <Suspense fallback={<div className="mt-6 py-1.5 bg-yellow-600 text-white">Loading Articles...</div>}>
+            <div className="mt-6 pt-1.5 bg-yellow-600 text-white sticky top-[95.5vh] lg:top-[95vh] z-[100000]"><Datera /></div>
+        </Suspense>
 
         {/* Services Overview */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {services.map((service, i) => {
                 const IconComponent = service.icon;
                 return (

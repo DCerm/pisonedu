@@ -62,21 +62,24 @@ const initiatives = [
     name: "Retrics",
     description: "Advanced Metrics",
     details:
-      "Practice notes/information, Potential policies, Research communication, Interdisciplinary coverage, Sustainability innovation (notes)",
+      /*"Practice notes/information, Potential policies, Research communication, Interdisciplinary coverage, Sustainability innovation (notes)"*/
+      "Retrics is an  advanced research metric where authors are requested to provide the following information about the research: practice notes/information, potential policies, interdisciplinary coverage and sustainable innovation (notes)",
     icon: TrendingUp,
   },
   {
     name: "Cobern",
     description: "Indexing Authority",
     details:
-      "An indexing authority or repository for construction, engineering and built environment publications - journals, books, book series and proceedings.",
+      /*"An indexing authority or repository for construction, engineering and built environment publications - journals, books, book series and proceedings.",*/
+      "Cobern is an indexing authority or repository for construction, engineering and built environment publications - journals, books, books series and proceedings.",
     icon: Archive,
   },
   {
     name: "Enolyst",
     description: "Virtual Assistant",
     details:
-      "A virtual assistant for authors and researchers on preparation, editing and formatting of manuscripts prior to submission to publication outlets.",
+      /*"A virtual assistant for authors and researchers on preparation, editing and formatting of manuscripts prior to submission to publication outlets.",*/
+      "Enolyst is a virtual assistant for authors and researchers on preparation, editing and formatting of manuscripts prior to submission to publication outlets.",
     icon: Users,
   },
 ];
@@ -256,8 +259,8 @@ export default function EnowisePage() {
               })}
             </div>
           </div>
-            <Suspense fallback={<div className="mt-6 py-1.5 bg-yellow-600 text-white">Loading News...</div>}>
-                <div className="mt-6 pt-1.5 bg-yellow-600 text-white"><Enowise /></div>
+            <Suspense fallback={<div className="mt-6 py-1.5 bg-yellow-600 text-white">Loading Articles...</div>}>
+                <div className="mt-6 pt-1.5 bg-yellow-600 text-white sticky top-[95.5vh] lg:top-[95vh] z-[100000]"><Enowise /></div>
             </Suspense>
         </section>
         

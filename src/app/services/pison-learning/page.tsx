@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, {Suspense} from "react";
 import { motion } from "motion/react";
 import {
   GraduationCap,
@@ -17,6 +17,7 @@ import {
 } from "lucide-react";
 import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
+import { Pison } from "@/components/ui/marquee";
 
 const trainingFeatures = [
   {
@@ -137,6 +138,9 @@ export default function PisonLearningPage() {
             </div>
           </div>
         </section>
+        <Suspense fallback={<div className="mt-6 py-1.5 bg-yellow-600 text-white">Loading Articles...</div>}>
+            <div className="mt-6 pt-1.5 bg-yellow-600 text-white sticky top-[95.5vh] lg:top-[95vh] z-[100000]"><Pison /></div>
+        </Suspense>
 
         {/* Services Overview */}
         <section className="py-20 bg-white">
@@ -167,6 +171,7 @@ export default function PisonLearningPage() {
             </div>
           </div>
         </section>
+
 
         {/* Training Section */}
         <section className="py-20 bg-gradient-to-br from-yellow-50/50 to-green-50/30">
