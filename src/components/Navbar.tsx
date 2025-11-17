@@ -69,12 +69,12 @@ export default function Navbar() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="hidden md:flex items-center space-x-8"
           >
-            <Link
-              href="/"
+            <a
+              href="https://pisonets.com"
               className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
             >
               Home
-            </Link>
+            </a>
             <a
               href="/#about"
               className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
@@ -117,7 +117,7 @@ export default function Navbar() {
             </DropdownMenu>
 
             <a
-              href="/#products"
+              href="https://pisonets.com/#products"
               className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
             >
               Products
@@ -173,7 +173,7 @@ export default function Navbar() {
                 Home
               </Link>
               <a
-                href="/#about"
+                href="https://pisonets.com/#about"
                 className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -211,7 +211,7 @@ export default function Navbar() {
               </div>
 
               <a
-                href="/#products"
+                href="https://pisonets.com/#products"
                 className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
