@@ -18,7 +18,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import Logo from "./Logo";
+//import Logo from "./Logo";
+import Image from "next/image";
 
 const services = [
   {
@@ -54,7 +55,11 @@ export default function Navbar() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Logo />
+            <Link href="/">
+                <Image src="/PisonLogo.png" alt="Pisonets Logo" width={674} height={274} 
+                    className="w-24 lg:w-32" 
+                />
+            </Link>
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -71,7 +76,7 @@ export default function Navbar() {
               Home
             </Link>
             <a
-              href="#about"
+              href="/#about"
               className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
             >
               About
@@ -112,7 +117,7 @@ export default function Navbar() {
             </DropdownMenu>
 
             <a
-              href="#products"
+              href="/#products"
               className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
             >
               Products
@@ -168,7 +173,7 @@ export default function Navbar() {
                 Home
               </Link>
               <a
-                href="#about"
+                href="/#about"
                 className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
@@ -206,7 +211,7 @@ export default function Navbar() {
               </div>
 
               <a
-                href="#products"
+                href="/#products"
                 className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
