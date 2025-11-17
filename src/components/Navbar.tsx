@@ -76,7 +76,7 @@ export default function Navbar() {
               Home
             </a>
             <a
-              href="/#about"
+              href="https://pisonets.com/#about"
               className="text-sm font-medium text-foreground hover:text-green-600 transition-colors duration-200"
             >
               About
