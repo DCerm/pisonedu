@@ -62,9 +62,9 @@ const socialLinks = [
 ];
 
 const quickLinks = [
-  { name: "About Us", href: "#about" },
-  { name: "Services", href: "#services" },
-  { name: "Products", href: "#products" },
+  { name: "About Us", href: "https://pisonets.com/#about" },
+  { name: "Services", href: "https://pisonets.com/#services" },
+  { name: "Products", href: "https://pisonets.com/#products" },
   { name: "Contact", href: "https://knowledgebase.pisonets.com/contact" },
 ];
 
